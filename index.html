@@ -1,393 +1,500 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaquerie.css" />
-  </head>
-  <body>
-    <nav id="desktop-nav">
-      <div class="logo">Rolando Garcia Cutie</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaquerie.css" />
+</head>
+
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">Rolando Garcia Cutie</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">Rolando G.</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Rolando G.</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <!-- <ul class="nav-links"> -->
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-          <!-- </ul> -->
-        </div>
+      <div class="menu-links">
+        <!-- <ul class="nav-links"> -->
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        <!-- </ul> -->
       </div>
-    </nav>
-    <section id="profile">
-      <div class="section__pic-container">
-        <img src="./assets/picfinal.jpg" alt="Rolando profile picture" />
+    </div>
+  </nav>
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="./assets/picfinal.jpg" alt="Rolando profile picture" />
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hello, I'm</p>
+      <h1 class="title">Rolando Garcia Cutie</h1>
+      <p class="section__text__p2">Mobile and Front-End Developer</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('./assets/CV.pdf')">
+          Download CV
+        </button>
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          Contact Info
+        </button>
       </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Rolando Garcia Cutie</h1>
-        <p class="section__text__p2">Mobile and Front-End Developer</p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/CV.pdf')"
-          >
-            Download CV
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
-          </button>
-        </div>
-        <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://www.linkedin.com/in/rolando-garcia-cutie-8393bb223/'"
-          />
-          <img
-            src="./assets/github.png"
-            alt="My GitHub profile"
-            class="icon"
-            onclick="location.href='https://github.com/RolandoCutie'"
-          />
-        </div>
+      <div id="socials-container">
+        <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon"
+          onclick="location.href='https://www.linkedin.com/in/rolando-garcia-cutie-8393bb223/'" />
+        <img src="./assets/github.png" alt="My GitHub profile" class="icon"
+          onclick="location.href='https://github.com/RolandoCutie'" />
       </div>
-    </section>
-    <section id="about">
-      <p class="section__text__p1">Get to Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-    
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experience</h3>
-              <p>
-                3+ years <br />
-                Mobile and Front-end Development
-              </p>
-            </div>
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>B.Eng Bachelor Degree<br /></p>
-            </div>
-          </div>
-          <div class="text-container">
+    </div>
+  </section>
+  <section id="about">
+    <p class="section__text__p1">Get to Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+            <h3>Experience</h3>
             <p>
-              A Mobile and Front-End developer specialized in Flutter and
-              Angular who dreams of becoming a Full Stack developer. I am a
-              responsible, creative and dynamic person who is always willing to
-              learn new skills and technologies that may allow me to improve
-              myself and grow both personally and professionally. I believe that
-              teamwork is the key to develop a quality product.
+              3+ years <br />
+              Mobile and Front-end Development
             </p>
           </div>
+          <div class="details-container">
+            <img src="./assets/education.png" alt="Education icon" class="icon" />
+            <h3>Education</h3>
+            <p>B.Eng Bachelor Degree<br /></p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>
+            A Mobile and Front-End developer specialized in Flutter and
+            Angular who dreams of becoming a Full Stack developer. I am a
+            responsible, creative and dynamic person who is always willing to
+            learn new skills and technologies that may allow me to improve
+            myself and grow both personally and professionally. I believe that
+            teamwork is the key to develop a quality product.
+          </p>
+        </div>
+        <div class="text-container">
+          <p>
+            
+            Throughout my career, I have worked on several mobile applications
+            developed for education, transportation, project management, and
+            taking care of vehicles and other transportation media.
+
+
+          </p>
+        </div>
+        <div class="text-container">
+          <p>
+
+
+            I have experience in the development of mobile and I have a good
+            knowledge of technologies such as Flutter,Xamarin Forms GetX,Bloc.
+            I love working in a team and I like work environments where there is a lot
+            of staff and from which I can learn new experiences every day. I am open
+            to suggestions and I like to accept all kinds of changes that arise to be a
+            better professional.
+
+          </p>
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
-    </section>
-    <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Mobile Developer</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Flutter</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Android</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Xamarin Forms</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Dart</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article id="p">
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Java</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article id="p">
-                <img
-                  id="p"
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>C#</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-            </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+  </section>
+  <section id="experience">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Experience</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="experience-sub-title">Mobile Developer</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Flutter</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Android</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Xamarin Forms</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Dart</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article id="p">
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Java</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article id="p">
+              <img id="p" src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>C#</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
           </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Fronted Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  id="p"
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>HTML</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>CSS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>
-                    Angular&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                  </h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>JavaScript</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>TypeScript</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Bootstrap</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-            </div>
+        </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">Fronted Development</h2>
+          <div class="article-container">
+            <article>
+              <img id="p" src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>HTML</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>CSS</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>
+                  Angular&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>JavaScript</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>TypeScript</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Bootstrap</h3>
+                <p>Basic</p>
+              </div>
+            </article>
           </div>
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
-    </section>
-    <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+  </section>
+  <section id="projects">
+    <p class="section__text__p1">Browse My Recent</p>
+    <h1 class="title">Projects</h1>
+    <center>
+      <h2 class="experience-sub-title">Mobile</h2>
+    </center>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/alivi.jpg" alt="Project AliviFlexCard" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">
+            Project AliviFlexCard
+          </h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="openPopupAlivi()">
+              About
+            </button>
+          </div>
+        </div>
+
+        <div id="popupAlivi" class="popup">
+          <div class="popup-content">
+            <span class="close" onclick="closePopupAlivi()">&times;</span>
+            <div class="popup-image-container">
+              <img src="./assets/alivi.jpg" alt="Project Alivi" class="popup-image1" />
+            </div>
+            <div class="popup-details">
+              <h2 class="popup-title">Project Alivi</h2>
+              <p class="popup-description">
+                Alivi administers healthcare benefits through innovative technology and software, enabling you to
+                effortlessly oversee your members' benefits with just a few clicks. With Alivi, you ensure quality,
+                performance, and security for your members, all while reducing operational costs.
+              </p>
+              <div class="details-container">
+                <h2 class="experience-sub-title">Tecnologies Used</h2>
+                <div class="article-container">
+                  <article>
+                    <img id="p" src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                    <div>
+                      <h3>Flutter</h3>
+
+                    </div>
+                  </article>
+                  <article>
+                    <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                    <div>
+                      <h3>Dart</h3>
+                    </div>
+                  </article>
+                  <article>
+                    <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                    <div>
+                      <h3>
+                        GetX&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      </h3>
+
+                    </div>
+                  </article>
+                  <article>
+                    <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                    <div>
+                      <h3>Clean Architecture</h3>
+
+                    </div>
+                  </article>
+                  <article>
+                    <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                    <div>
+                      <h3>TDD</h3>
+
+                    </div>
+                  </article>
+                  <article>
+                    <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                    <div>
+                      <h3>AWS</h3>
+
+                    </div>
+                  </article>
+                </div>
+
+
+              </div>
+              <div class="popup-links">
+                <a href="#" class="google-play-link">Google Play</a>
+                <a href="#" class="apple-store-link">Apple Store</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/ataja.jpg" alt="Project Ataja" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Project Ataja</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="openPopupAtaja()">
+              About
+            </button>
+          </div>
+        </div>
+
+        <div id="popupAtaja" class="popup">
+          <div class="popup-content">
+            <span class="close" onclick="closePopupAtaja()">&times;</span>
+            <div class="popup-image-container">
+              <img src="./assets/ataja.jpg" alt="Project Ataja" class="popup-image1" />
+            </div>
+            <div class="popup-details">
+              <h2 class="popup-title">Project Ataja</h2>
+              <p class="popup-description">
+                Ataja is a solution against intruders and thieves, Ochoa warned and stressed that it is a GPS location
+                and tracking system applicable to vehicles, including motorcycles and electric bicycles.
+              </p>
+              <div class="details-container">
+                <h2 class="experience-sub-title">Tecnologies Used</h2>
+                <div class="article-container">
+                  <article>
+                    <img id="p" src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                    <div>
+                      <h3>Flutter</h3>
+
+                    </div>
+                  </article>
+                  <article>
+                    <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                    <div>
+                      <h3>Dart</h3>
+                    </div>
+                  </article>
+                  <article>
+                    <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                    <div>
+                      <h3>
+                        GetX&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      </h3>
+
+                    </div>
+                  </article>
+                  <article>
+                    <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                    <div>
+                      <h3>Clean Architecture</h3>
+
+                    </div>
+                  </article>
+                  <article>
+                    <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                    <div>
+                      <h3>DDD</h3>
+
+                    </div>
+                  </article>
+                </div>
+              </div>
+              <div class="popup-links">
+                <a href="#" class="google-play-link">Google Play</a>
+                <a href="#" class="apple-store-link">Apple Store</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/welltrax.png" alt="Project WellTrax" class="project1-img" />
+          </div>
+          <h2 class="experience-sub-title project-title1 ">Project WellTrax</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="openPopup()">
+              About
+            </button>
+          </div>
+        </div>
+
+        <!-- Popup Template -->
+        <div id="popup" class="popup">
+          <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <div class="popup-image-container">
+              <img src="./assets/welltrax.png" alt="Project WellTrax" class="popup-image" />
+            </div>
+            <div class="popup-details">
+              <h2 class="popup-title">Project WellTrax</h2>
+              <p class="popup-description">
+                Welltrax is the cloud-based, bulk commodity trucking software solution that allows you to make smarter
+                decisions, manage processes more effectively, and optimize your business all in real-time. Driver
+                adoption is fast and easy with logical driver workflow. Ticket validation occurs before run tickets are
+                even printed to eliminate reconciliation issues. Customize the driver workflow to mirror how your
+                business operates. Welltrax can integrate with your HOS provider to display drivers’ hours of service on
+                the dispatch board and throughout the driver workflow.
+              </p>
+              <div class="details-container">
+                <h2 class="experience-sub-title">Tecnologies Used</h2>
+                <div class="article-container">
+                  <article>
+                    <img id="p" src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                    <div>
+                      <h3>Android</h3>
+
+                    </div>
+                  </article>
+                  <article>
+                    <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                    <div>
+                      <h3>Java</h3>
+                    </div>
+                  </article>
+                  <article>
+                    <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                    <div>
+                      <h3>
+                        Equatable&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      </h3>
+
+                    </div>
+                  </article>
+                  <article>
+                    <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                    <div>
+                      <h3>SQL</h3>
+
+                    </div>
+                  </article>
+                  <article>
+                    <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                    <div>
+                      <h3>TDD</h3>
+
+                    </div>
+                  </article>
+                  <article>
+                    <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                    <div>
+                      <h3>FIREBASE</h3>
+
+                    </div>
+                  </article>
+                </div>
+              </div>
+              <div class="popup-links">
+                <a href="#" class="google-play-link">Google Play</a>
+
+                <a href="#" class="apple-store-link">Apple Store</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+  </section>
+  <section id="contact">
+    <div class="contact-form">
+
       <h1 class="title">Projects</h1>
-      <center><h2 class="experience-sub-title">Mobile</h2></center>
+
       <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/alivi.jpg"
-                alt="Project AliviFlexCard"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">
-              Project AliviFlexCard
-            </h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/storm-clash/tesisSEISA'"
-              >
-                Github
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/ataja.jpg"
-                alt="Project Ataja"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Project Ataja</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/storm-clash/portafolio'"
-              >
-                Github
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img src="./assets/welltrax.png" alt="Project WellTrax" class="project1-img" />
-            </div>
-            <h2 class="experience-sub-title project-title1 ">Project WellTrax</h2>
-            <div class="btn-container">
-              <button class="btn btn-color-2 project-btn" onclick="openPopup()">
-                Github
-              </button>
-            </div>
-          </div>
-          
-          <!-- Popup Template -->
-          <div id="popup" class="popup">
-            <div class="popup-content">
-              <span class="close" onclick="closePopup()">&times;</span>
-              <div class="popup-image-container">
-                <img src="./assets/welltrax.png" alt="Project WellTrax" class="popup-image" />
-              </div>
-              <div class="popup-details">
-                <h2 class="popup-title">Project WellTrax</h2>
-                <p class="popup-description">
-                  Insert your project description here.
-                </p>
-                <div class="popup-links">
-                  <a href="#" class="google-play-link">Google Play</a>
-                  <a href="#" class="apple-store-link">Apple Store</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
-    </section>
-    <section id="contact">
-      <div class="contact-form">
         <h1>Contact Us</h1>
         <div class="container">
           <div class="main">
             <div class="content">
               <h2>Contact</h2>
-              
-                <!-- Honeypot -->
-                <input type="text" name="_honey" style="display: none" />
-
-                <!-- Disable Captcha -->
-                <input type="hidden" name="_captcha" value="false" />
-
-                <input
-                  type="hidden"
-                  name="_next"
-                  value="https://storm-clash.github.io/portafolio/thanks.html"
-                />
-                <div class="btn-container">
-                  <button class="btn btn-color-2 project-btn" type="submit">
-                    Send Message
-                  </button>
-                </div>
+              <div class="btn-container">
+                <button class="btn btn-color-2 project-btn" type="submit">
+                  Send Message
+                </button>
+              </div>
               </form>
             </div>
             <div class="form-img">
@@ -396,8 +503,8 @@
           </div>
         </div>
       </div>
-    </section>
-    <!-- <section id="contact">
+  </section>
+  <!-- <section id="contact">
       <p class="section__text__p1">Explore My</p>
       <h1 class="title">Get In Touch</h1>
       <div class="section-container">
@@ -453,21 +560,20 @@
         </div>
       </div>
     </section> -->
-    <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-      <p>Copyright &#169; 2023 RGC All Rights Reserved.</p>
-    </footer>
-    <script src="script.js"></script>
-  </body>
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p>Copyright &#169; 2023 RGC All Rights Reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
 </html>
-
-
